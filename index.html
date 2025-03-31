@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target school Выбор предметов</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Выберите любимые и нелюбимые предметы</h1>
+        <form id="feedback-form">
+            <div class="input-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="input-group">
+                <label for="surname">Фамилия:</label>
+                <input type="text" id="surname" required>
+            </div>
+            <div class="input-group">
+                <label for="class">Класс:</label>
+                <input type="text" id="class" required>
+            </div>
+            <div class="subjects">
+                <p>Выберите предметы:</p>
+                <div class="subject" data-subject="Математика">
+                    <span>Математика</span>
+                    <div class="buttons">
+                        <button type="button" class="like">👍</button>
+                        <button type="button" class="dislike">👎</button>
+                    </div>
+                    <input type="text" class="comment" placeholder="Комментарий (если есть)">
+                </div>
+
+                <div class="subject" data-subject="Физика">
+                    <span>Физика</span>
+                    <div class="buttons">
+                        <button type="button" class="like">👍</button>
+                        <button type="button" class="dislike">👎</button>
+                    </div>
+                    <input type="text" class="comment" placeholder="Комментарий (если есть)">
+                </div>
+
+                <div class="subject" data-subject="Химия">
+                    <span>Химия</span>
+                    <div class="buttons">
+                        <button type="button" class="like">👍</button>
+                        <button type="button" class="dislike">👎</button>
+                    </div>
+                    <input type="text" class="comment" placeholder="Комментарий (если есть)">
+                </div>
+
+                <div class="subject" data-subject="Биология">
+                    <span>Биология</span>
+                    <div class="buttons">
+                        <button type="button" class="like">👍</button>
+                        <button type="button" class="dislike">👎</button>
+                    </div>
+                    <input type="text" class="comment" placeholder="Комментарий (если есть)">
+                </div>
+
+                <div class="subject" data-subject="География">
+                    <span>География</span>
+                    <div class="buttons">
+                        <button type="button" class="like">👍</button>
+                        <button type="button" class="dislike">👎</button>
+                    </div>
+                    <input type="text" class="comment" placeholder="Комментарий (если есть)">
+                </div>
+
+                <div class="subject" data-subject="Литература">
+                    <span>Литература</span>
+                    <div class="buttons">
+                        <button type="button" class="like">👍</button>
+                        <button type="button" class="dislike">👎</button>
+                    </div>
+                    <input type="text" class="comment" placeholder="Комментарий (если есть)">
+                </div>
+
+                <div class="subject" data-subject="Английский">
+                    <span>Английский</span>
+                    <div class="buttons">
+                        <button type="button" class="like">👍</button>
+                        <button type="button" class="dislike">👎</button>
+                    </div>
+                    <input type="text" class="comment" placeholder="Комментарий (если есть)">
+                </div>
+
+                <div class="subject" data-subject="История">
+                    <span>История</span>
+                    <div class="buttons">
+                        <button type="button" class="like">👍</button>
+                        <button type="button" class="dislike">👎</button>
+                    </div>
+                    <input type="text" class="comment" placeholder="Комментарий (если есть)">
+                </div>
+
+                <div class="subject" data-subject="Информатика">
+                    <span>Информатика</span>
+                    <div class="buttons">
+                        <button type="button" class="like">👍</button>
+                        <button type="button" class="dislike">👎</button>
+                    </div>
+                    <input type="text" class="comment" placeholder="Комментарий (если есть)">
+                </div>
+
+                <div class="subject" data-subject="Физкультура">
+                    <span>Физкультура</span>
+                    <div class="buttons">
+                        <button type="button" class="like">👍</button>
+                        <button type="button" class="dislike">👎</button>
+                    </div>
+                    <input type="text" class="comment" placeholder="Комментарий (если есть)">
+                </div>
+                <p id="confirmation-message" style="display: none; color: green; font-weight: bold;">
+                    Спасибо за ваш отзыв! Ваши предпочтения учтены.
+                </p>
+            </div>
+            <button type="submit" class="submit-btn">Отправить</button>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

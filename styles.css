@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input,
+button {
+    width: 80%;
+    padding: 12px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.subjects {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.subject {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.subject span {
+    flex-grow: 1;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.like,
+.dislike {
+    width: 45px;
+    height: 45px;
+    background-color: #eee;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.like:hover {
+    background-color: #34d399;
+}
+
+.dislike:hover {
+    background-color: #f87171;
+}
+
+.selected-like {
+    background-color: #34d399 !important;
+}
+
+.selected-dislike {
+    background-color: #f87171 !important;
+}
+
+.comment {
+    width: 100%;
+    display: none;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background: #22c55e;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.submit-btn:hover {
+    background: #16a34a;
+}
+
+.subjects {
+    max-height: 250px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.subject {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
